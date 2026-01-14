@@ -1,4 +1,4 @@
-## Ejercicio de Express - Listado de Usuarios por Especialidad
+# Ejercicio de Express - Listado de Usuarios por Especialidad
 
 Este ejercicio tiene como objetivo practicar el uso de Express para crear un servidor web que gestiona y muestra información de usuarios en diferentes rutas. Utilizaremos un conjunto de datos en formato JSON que representa usuarios con diversas características, como nombre, edad y especialidad.
 
