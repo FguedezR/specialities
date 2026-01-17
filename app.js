@@ -1,5 +1,5 @@
-const express = require("express");
-const app = express();
+const express      = require("express");
+const app          = express();
 const { getUsers } = require("./users");
 
 app.get("/", (req, res) => {
@@ -28,13 +28,11 @@ app.get("/developers", (req, res) => {
 
 // ruta dinamica
 app.get("/specialty/:type", (req, res) => {
-  const type = req.params.type;
+  const type = req.params.type; 
   const filteredUsers = getUsers(type);
 
   if (filteredUsers.length === 0) {
-    return res
-      .status(404)
-      .send('<h1>Especialidad no encontrada</h1><a href="/">Home</a>');
+    return res.status(404).send('<h1>Especialidad no encontrada</h1><a href="/">Home</a>');
   }
 
   const usersList = filteredUsers
